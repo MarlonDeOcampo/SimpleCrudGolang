@@ -24,7 +24,7 @@ services:
     volumes:
       - postgres-data2:/var/lib/postgresql/data
 
-  payment-service:
+  simplecrud:
     image: alhon05/golangsimplecrud:v${VERSION}
     volumes: 
       - simplecrud_data:/services/simplecrud
@@ -33,7 +33,7 @@ services:
     networks:
       - postgres_network2
     depends_on:
-      - postgres-db
+      - postgres
 
 volumes:
   postgres-data2:
