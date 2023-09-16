@@ -24,10 +24,10 @@ func main() {
 			"delete":  "/deletePayment",
 		})
 	})
-	r.GET("/allpayments", controllers.GetAllPayments)
-	r.GET("/allpayments", controllers.GetPayment)
-	r.GET("/allpayments", controllers.AddPayment)
-	r.GET("/allpayments", controllers.UpdatePayment)
-	r.GET("/allpayments", controllers.DeletePayment)
+	r.GET("/getAllPayments", controllers.GetAllPayments)
+	r.GET("/getPayment", controllers.GetPayment)
+	r.GET("/addPayment", controllers.AddPayment)
+	r.GET("/updatePayment", controllers.UpdatePayment)
+	r.GET("/deletePayment", controllers.DeletePayment)
 	r.Run()
 }
