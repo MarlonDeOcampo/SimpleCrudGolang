@@ -1,13 +1,14 @@
 package models
 
 import (
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
 
 type Payment struct {
 	gorm.Model
-	Paymentid *string `json:"paymentid" gorm:"primary_key"`
-	Userid    *string `json:"userid"`
-	Lastname  *string `json:"lastname"`
-	Firstname *string `json:"firstname"`
+	Paymentid uuid.UUID `json:"paymentid" gorm:"primary_key"`
+	Userid    string
+	Lastname  string `json:"lastname"`
+	Firstname string `json:"firstname"`
 }
