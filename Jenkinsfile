@@ -38,7 +38,7 @@ pipeline {
                             configName: "marlon", 
                             transfers: [sshTransfer(
                                 execTimeout: 120000,
-                                execCommand: "cd ~/go/src/github.com/marlon/golangsimplecrud;VERSION=$BUILD_ID docker stack deploy -c stack-main-global.yml main2"
+                                execCommand: "cd ~/Documents/golangAPI;VERSION=$BUILD_ID docker stack deploy -c stack-main-global.yml main2"
                             )]
                         ) 
                     ]
