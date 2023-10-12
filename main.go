@@ -29,5 +29,5 @@ func main() {
 	r.POST("/addPayment", controllers.AddPayment)
 	r.PUT("/updatePayment/:id", controllers.UpdatePayment)
 	r.DELETE("/deletePayment/:id", controllers.DeletePayment)
-	r.Run(":4005")
+	r.Run()
 }
