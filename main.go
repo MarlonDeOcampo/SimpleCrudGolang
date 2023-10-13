@@ -1,16 +1,18 @@
 package main
 
 import (
+	"gosimplecrud/controllers"
+	Initialize "gosimplecrud/initializer"
+	"gosimplecrud/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/marlon/golangsimplecrud/controllers"
-	Initialize "github.com/marlon/golangsimplecrud/initializer"
 )
 
 func init() {
 	Initialize.LoadEnv()
 	Initialize.InitializeDBConnection()
+	Initialize.DB.AutoMigrate(&models.Payment{})
 }
 
 func main() {

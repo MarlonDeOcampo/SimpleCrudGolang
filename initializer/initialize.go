@@ -2,11 +2,12 @@ package Initialize
 
 import (
 	"fmt"
+	"gosimplecrud/models"
 	"log"
 	"os"
 
 	"github.com/joho/godotenv"
-	model "github.com/marlon/golangsimplecrud/models"
+
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -29,7 +30,7 @@ func InitializeDBConnection() {
 		panic(err.Error())
 	}
 
-	db.AutoMigrate(model.Payment{})
+	db.AutoMigrate(models.Payment{})
 	DB = db
 
 	fmt.Printf("\nSuccessfully connected to database!\n")

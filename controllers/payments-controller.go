@@ -1,12 +1,12 @@
 package controllers
 
 import (
+	Initialize "gosimplecrud/initializer"
+	"gosimplecrud/models"
 	"log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	Initialize "github.com/marlon/golangsimplecrud/initializer"
-	"github.com/marlon/golangsimplecrud/models"
 )
 
 // Get All Payment List

@@ -1,8 +1,8 @@
 package main
 
 import (
-	Initialize "github.com/marlon/golangsimplecrud/initializer"
-	"github.com/marlon/golangsimplecrud/models"
+	Initialize "gosimplecrud/initializer"
+	"gosimplecrud/models"
 )
 
 func init() {
